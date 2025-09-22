@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 20px;
@@ -6,7 +6,6 @@ body {
 .container {
   max-width: 800px;
   margin: 0 auto;
-
   padding: 0 20px;
 }
 .main-title {
@@ -55,4 +54,103 @@ body {
   margin-top: 52px;
   margin-bottom: 64px;
   line-height: 23px;
+} */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul,
+blockquote,
+hr {
+  width: 700px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
+}
+p,
+blockquote,
+ol,
+ul {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+img {
+  width: 1024px;
+  height: 0 auto;
+  display: block;
+}
+h1 + p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 22px;
+}
+a {
+  color: inherit;
+}
+h1 {
+  margin: 50px auto;
+  font-size: 38px;
+  line-height: 44px;
+}
+h2 {
+  margin-top: 40px;
+  font-size: 32px;
+  line-height: 36px;
+}
+h3 {
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 32px;
+}
+h4 {
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 28px;
+}
+hr {
+  width: 1024px;
+  margin: 20px auto;
+}
+h2 + hr + p,
+h3 + hr + p,
+h4 + hr + p {
+  margin-top: 10px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+li {
+  margin: 8px, 0;
+}
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+blockquote::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: -17px;
 }
